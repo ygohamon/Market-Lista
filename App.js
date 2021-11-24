@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import React, { useState } from 'react';
 import { Button, StyleSheet, Text, TextInput, View } from 'react-native';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronRight, faChevronLeft, faCircle, faCheckCircle, faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const App = () => {
 
@@ -80,35 +82,48 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <TextInput value={inputValue} onChangeText={(event) => setInputValue(event.target.value)} placeholder='Adicione o produto...'/>
-      <View>
+
+      <TextInput value={inputValue} onChange={(event) => setInputValue(event.target.value)} placeholder='Adicione o produto...'/>
+      <FontAwesomeIcon icon={faPlus} onClick={() => handleAdd()} />
+	  
+	  <View>
         {items.map((item, index) => (
           <View key={index}>
             <View onTouchStart={() => toggleComplete(index)}>
+
               {item.isSelected ? (
 
                 <React.Fragment>
-                  <span>{item.itemName}</span>
+				<FontAwesomeIcon icon={faCheckCircle} />
+				<Text>{item.itemName}</Text>
                 </React.Fragment>
+
               ) : (
+
                 <React.Fragment>
-                  <span>{item.itemName}</span>
+				<FontAwesomeIcon icon={faCircle} />
+				<Text>{item.itemName}</Text>
                 </React.Fragment>
+
               )}
+
             </View>
+
             <View>
-              R$ <TextInput placeholder='0,00' value={item.valor} onChangeText={(event) => { handleChangeValueItem(index, event.currentTarget.value) }}/>
-            </View>
-              <Button 
-              onPress={() => handleQuantityDecrease(index)}
-              title="+"
-              />
-              <span>{item.quantity}</span>
-              <Button 
-              onPress={() => handleQuantityIncrease(index)}
-              title="-"
-              />
+            	R$ <TextInput placeholder='0,00' value={item.valor} onChange={(event) => { handleChangeValueItem(index, event.currentTarget.value) }}/>
+            
+			</View>
+			  	<Button onPress={() => handleQuantityDecrease(index)} title="-">
+				  <FontAwesomeIcon icon={faChevronLeft} onPress={() => handleQuantityDecrease(index)} />
+			  	</Button>
+
+              		<Text>{item.quantity}</Text>
+
+              	<Button onPress={() => handleQuantityIncrease(index)} title="+">
+				  <FontAwesomeIcon icon={faChevronRight} onClick={() => handleQuantityIncrease(index)} />
+				</Button>
           </View>
+
         ))}
         <View>Qtotal: {totalItemCount}</View>
         <View>R$: {total.toFixed(2)}</View>
