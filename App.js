@@ -9,7 +9,7 @@ import {
   faCheckCircle,
   faPlus,
 } from "@fortawesome/free-solid-svg-icons";
-import "./App.css";
+
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -178,6 +178,112 @@ const styles = StyleSheet.create({
     padding: "20px",
     boxshadow: "10px 10px 26px 0px rgba(0, 0, 0, 0.35)",
   },
+  title: {
+    textalign: "center"
+  },
+  
+  add_item_box: {
+    background: "#6554bb",
+    color: "#c3bbe9",
+    margintop: "1em",
+    marginbottom: "1em",
+    display: "flex",
+    alignitems: "center",
+    borderradius: "10px",
+    padding: "5px"
+  },
+  
+  add_item_input: {
+    boxsizing: "border-box",
+    border: "none",
+    background: "transparent",
+    color: "#c3bbe9",
+    width: "100%",
+    height: "30px"
+  },
+  
+  item_list: {
+    display: "flex",
+    flexdirection: "column"
+  },
+  
+  item_container: {
+    display: "flex",
+    alignitems: "center",
+    justifycontent: "space-between",
+    padding: "20px 0 20px 0",
+    borderbottom: "1px #6554bb solid"
+  },
+  
+  item_name: {
+    cursor: "pointer"
+  },
+
+  valor_item_box: {
+    display: "flex",
+    background: "#6554bb",
+    borderradius: "50px",
+    color: "#bab1e9",
+    display: "inline",
+    alignitems: "flex-end",
+    padding: "5px",
+    justifycontent: "right"
+  },
+  
+  
+  valor_item_input: {
+    border: "1px solid #6554bb",
+    background: "#6554bb",
+    borderradius: "50px",
+    color: "#c3bbe9",
+    minwidth: "70px",
+    width: "100px",
+    height: "40px"
+  },
+  
+  item_action_buttons: {
+    /* width: 30%; */
+    display: "flex",
+    justifycontent: "space-between"
+  },
+  
+  remove_button: {
+    color: "#c3bbe9",
+    backgroundcolor: "red"
+  },
+  
+  total: {
+    float: "right",
+    padding: "10px"
+  },
+  
+  valor: {
+    float: "right",
+    padding: "10px"
+  },
+  
+  quantity: {
+    display: "flex",
+    alignitems: "center",
+    border: "1px solid #6554bb",
+    background: "#6554bb",
+    borderradius: "50px",
+    fontsize: "12px",
+    color: "#c3bbe9",
+    minwidth: "70px",
+    justifycontent: "space-between"
+  },
+  
+  button: {
+    background: "transparent",
+    border: "none",
+    margin: "3px",
+    color: "#c3bbe9"
+  },
+  
+  completed: {
+    textdecoration: "line-through"
+  }
 });
 
 export default App;
