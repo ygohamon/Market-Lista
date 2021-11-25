@@ -10,15 +10,19 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@emotion/react": "^11.6.0",
+    "@emotion/styled": "^11.6.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.16",
+    "@material-ui/core": "^5.0.0-beta.5",
     "expo": "~43.0.2",
     "expo-status-bar": "~1.1.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
     "react-native-elements": "^3.4.2",
+    "react-native-vector-icons": "^9.0.0",
     "react-native-web": "0.17.1"
   },
   "devDependencies": {

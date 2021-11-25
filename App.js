@@ -2,13 +2,7 @@ import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
 import { Button, StyleSheet, Text, TextInput, View } from "react-native";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronRight,
-  faChevronLeft,
-  faCircle,
-  faCheckCircle,
-  faPlus,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCircle, faCheckCircle, faPlus, faPlusCircle, faMinusCircle } from "@fortawesome/free-solid-svg-icons";
 
 
 const App = () => {
@@ -100,13 +94,13 @@ const App = () => {
           {items.map((item, index) => (
             <View key={index} style={styles.item_container}>
               <View
-                onTouchStart={() => toggleComplete(index)}
+                onClick={() => toggleComplete(index)}
                 style={styles.item_name}
               >
                 {item.isSelected ? (
                   <React.Fragment>
                     <FontAwesomeIcon icon={faCheckCircle} />
-                    <Text style={styles.complete}>{item.itemName}</Text>
+                    <Text style={styles.completed}>{item.itemName}</Text>
                   </React.Fragment>
                 ) : (
                   <React.Fragment>
@@ -125,25 +119,19 @@ const App = () => {
                     onChange={(event) => {
                       handleChangeValueItem(index, event.currentTarget.value);
                     }}
-					style={styles.valor_item_input}
+					          style={styles.valor_item_input}
                   />
                 </View>
-
-                <Button onPress={() => handleQuantityDecrease(index)} title="-">
                   <FontAwesomeIcon
-                    icon={faChevronLeft}
-                    onPress={() => handleQuantityDecrease(index)}
-                  />
-                </Button>
-
-                <Text>{item.quantity}</Text>
-
-                <Button onPress={() => handleQuantityIncrease(index)} title="+">
-                  <FontAwesomeIcon
-                    icon={faChevronRight}
+                    icon={faPlusCircle}
                     onClick={() => handleQuantityIncrease(index)}
                   />
-                </Button>
+                <Text>{item.quantity}</Text>
+                  <FontAwesomeIcon
+                    icon={faMinusCircle}
+                    onClick={() => handleQuantityDecrease(index)}
+                  />
+                
               </View>
             </View>
           ))}
@@ -157,11 +145,17 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
+  statusBar: {
+    backgroundColor: "#7f39fb",
+    color: "#fff",
+    width: "100%",
+    height: 30
+  },
   container: {
     flex: 1,
     backgroundColor: "#6554bb",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "flex-start",
   },
   app_background: {
     backgroundColor: "6554bb",
@@ -179,32 +173,28 @@ const styles = StyleSheet.create({
     boxshadow: "10px 10px 26px 0px rgba(0, 0, 0, 0.35)",
   },
   title: {
-    textalign: "center"
+    textAlign: "center"
   },
   
   add_item_box: {
-    background: "#6554bb",
-    color: "#c3bbe9",
-    margintop: "1em",
-    marginbottom: "1em",
-    display: "flex",
-    alignitems: "center",
-    borderradius: "10px",
-    padding: "5px"
+    flexDirection: "row",
+    width: "100%",
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   
   add_item_input: {
-    boxsizing: "border-box",
-    border: "none",
-    background: "transparent",
-    color: "#c3bbe9",
-    width: "100%",
-    height: "30px"
+    borderWidth:1,
+    borderColor: "#7f39fb",
+    borderRadius: 8,
+    padding: 10,
+    margin: 10,
+    width: "80%"
   },
   
   item_list: {
-    display: "flex",
-    flexdirection: "column"
+    width: "100%",
+    display: "flex"
   },
   
   item_container: {
@@ -282,7 +272,7 @@ const styles = StyleSheet.create({
   },
   
   completed: {
-    textdecoration: "line-through"
+    textDecorationLine: "line-through"
   }
 });
 
