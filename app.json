@@ -1,32 +1,19 @@
 {
+  "name": "shoplist",
+  "displayName": "Lista de Compras",
   "expo": {
-    "name": "lcompras",
-    "slug": "lcompras",
+    "name": "Lista de Compras",
+    "icon": "./assets/sacola.png",
     "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "slug": "YgoHamon",
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.ravsytem.ygohamon",
+      "buildNumber": "1.0.0"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
+      "package": "com.ravsytem.ygohamon",
+      "versionCode": 1
     }
-  }
+   }
+  
 }
