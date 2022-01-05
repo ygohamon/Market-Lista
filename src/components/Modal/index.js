@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 import { Alert, Platform } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { FontAwesome } from '@expo/vector-icons';
 
 import {
     Modal, Fundo, Janela, JanelaInner, Titulo, InfosArea, CampoArea, Campo, CampoQuantidade, CampoNome, CampoPreco, Botao, BotaoTexto, CloseButton
@@ -137,7 +137,7 @@ export default () => {
                         </InfosArea>
                     </JanelaInner>
                     <CloseButton onPress={handleCloseModal}>
-                        <Icon name="close" size={24} color="#FFFFFF" />
+                        <FontAwesome name="close" size={24} color="#FFFFFF" />
                     </CloseButton>
                 </Janela>
             </Fundo>

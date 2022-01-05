@@ -18,7 +18,7 @@ export const Fundo = styled.KeyboardAvoidingView`
 export const Janela = styled.View`
     width: 100%;
     min-height: 100px;
-    border-radius: 4px;
+    border-radius: 5px;
     background-color: #FFF;
 `;
 
@@ -35,8 +35,7 @@ export const Titulo = styled.Text`
     padding: 10px 0;
     margin-bottom: 30px;
     background-color: #7f1e84;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
+    border-radius: 5px;
 `;
 
 export const InfosArea = styled.View`
@@ -89,7 +88,7 @@ export const CampoPreco = styled(TextInputMask)`
 export const Botao = styled.TouchableOpacity`
     width: 100%;
     height: 50px;
-    border-radius: 0;
+    border-radius: 5;
     background-color: #7f1e84;
     align-items: center;
     justify-content: center;
@@ -100,6 +99,7 @@ export const BotaoTexto = styled.Text`
     font-size: 18px;
     color: #FFFFFF;
     text-transform: uppercase;
+    border-radius: 5px;
 `;
 
 export const CloseButton = styled.TouchableOpacity`

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { FontAwesome } from '@expo/vector-icons';
 
 import {
     TabArea, 
@@ -35,7 +35,7 @@ export default () => {
             {appstate.show_done === false && <TabItem onPress={()=>{
                 handleShowDone(true);
             }}>
-                <Icon 
+                <FontAwesome 
                     name="eye-slash" 
                     size={24} 
                     color="#833f8c"
@@ -44,7 +44,7 @@ export default () => {
             {appstate.show_done === true && <TabItem onPress={()=>{
                 handleShowDone(false)
             }}>
-                <Icon 
+                <FontAwesome 
                     name="eye" 
                     size={26} 
                     color="#833f8c"
@@ -56,7 +56,7 @@ export default () => {
                 </PrecoContainer>
             </TabItemPreco>
             <TabItemFilled onPress={handleModal}>
-                <Icon 
+                <FontAwesome 
                     name="plus-square" 
                     size={24} 
                     color="#FFFFFF" 

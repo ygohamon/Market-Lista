@@ -1,5 +1,5 @@
 import React from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
+import { FontAwesome } from '@expo/vector-icons';
 
 import {
     ListItemContainer,
@@ -24,7 +24,7 @@ export default ({item, onPress, onLongPress}) => {
                     </Infos>
                     <CheckArea>
                         <CheckButton done={item.done == true ? true : false}>
-                            <Icon name="check" size={24} color="#FFFFFF" />
+                            <FontAwesome name="check" size={24} color="#FFFFFF" />
                         </CheckButton>
                     </CheckArea>
                 </ListInnerContainer>
