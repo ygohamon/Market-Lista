@@ -11,7 +11,7 @@ export default ({titulo}) => {
     return (
         <HeaderArea>
             <HeaderImage source={
-                require('../../assets/frutas.png')
+                require('../../assets/orange.gif')
             } />
             <HeaderTitleArea>
                 <HeaderTitle>{titulo}</HeaderTitle>

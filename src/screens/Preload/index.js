@@ -1,5 +1,5 @@
-import React, { useContext, useEffect } from 'react';
-import Image from 'react-native-scalable-image';
+import React, { useContext, useEffect, useState } from 'react';
+import LottieView from  "lottie-react-native";
 
 import { useNavigation } from '@react-navigation/native';
 
@@ -11,7 +11,7 @@ import AppContext from '../../contexts';
 import { Api } from '../../data';
 
 export default () => {
-
+  
     const navigation = useNavigation();
     const { dispatch } = useContext(AppContext);
 
@@ -42,9 +42,13 @@ export default () => {
 
     return (
         <Container>
-            <Image
-                width={200} 
-                source={require('../../assets/saco-ecologico.png')}
+            <LottieView
+                width={300}
+                heigth={300}
+                speed={1} 
+                source={require("../../assets/load.json")}
+                loop
+                autoPlay
             />
         </Container>
     );

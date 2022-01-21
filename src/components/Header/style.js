@@ -16,7 +16,7 @@ export const HeaderImage = styled.Image.attrs({
 export const HeaderTitleArea = styled.View`
     flex-direction: row;
     width: 100%;
-    padding: 10px 20px;
+    padding: 5px 20px;
     align-items: center;
     justify-content: space-between;
     background-color: #732a7c;

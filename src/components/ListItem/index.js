@@ -12,18 +12,19 @@ import {
     CheckButton
 } from './style';
 
-export default ({item, onPress, onLongPress}) => {
+export default ({id, nome, quantidade, preco, done, onPress, onLongPress}) => {
+
     return (
-        <ListItemContainer key={`${item.id}`}>
-            <ListItemInner onPress={onPress} onLongPress={onLongPress}>
+        <ListItemContainer key={id}>
+            <ListItemInner onPress={onPress}>
                 <ListInnerContainer>
                     <Infos>
-                        <Nome>{item.nome}</Nome>
-                        <InfoText>Quantidade: {item.quantidade}</InfoText>
-                        <InfoText>Preço: R$ {parseFloat(item.preco).toFixed(2)} - Total: R$ {parseFloat((item.quantidade*item.preco)).toFixed(2)}</InfoText>
+                        <Nome>{nome}</Nome>
+                        <InfoText>Quantidade: {quantidade}</InfoText>
+                        <InfoText>Preço: R$ {parseFloat(preco).toFixed(2)} - Total: R$ {parseFloat((quantidade*preco)).toFixed(2)}</InfoText>
                     </Infos>
                     <CheckArea>
-                        <CheckButton done={item.done == true ? true : false}>
+                        <CheckButton done={done == true ? true : false}>
                             <FontAwesome name="check" size={24} color="#FFFFFF" />
                         </CheckButton>
                     </CheckArea>
