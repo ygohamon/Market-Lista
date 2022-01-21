@@ -11,7 +11,7 @@ export const Texto = styled.Text`
     text-transform: uppercase;
 `;
 
-export const ListArea = styled.ScrollView`
+export const ListArea = styled.View`
     flex: 1;
     width: 100%;
     background-color: #FFFFFF;
