@@ -6,7 +6,7 @@ export const TabArea = styled.View`
     justify-content: space-between;
     width: 100%;
     height: 60px;
-    background-color: #cb6fd6;
+    background-color: #eebb2c;
 `;
 export const TabItem = styled.TouchableOpacity`
     flex: 1;
@@ -16,15 +16,15 @@ export const TabItem = styled.TouchableOpacity`
 `;
 
 export const TabItemFilled = styled(TabItem)`
-    background-color: #732a7c;
+    background-color: #D3e23a;
 `;
 
 export const TabItemPreco = styled(TabItem)`
-    background-color: #9c3ea8;
+    background-color: #f4aa51;
 `;
 
 export const PrecoContainer = styled.View`
-    background-color: #be73c8;
+    background-color: #eebb2c;
     height: 30px;
     border-radius: 15px;
     align-items: center;
@@ -33,7 +33,7 @@ export const PrecoContainer = styled.View`
 `;
 
 export const Preco = styled.Text`
-    color: #e9ddeb;
+    color: #fdf8ea;
     font-size: 16px;
     font-weight: bold;
 `;

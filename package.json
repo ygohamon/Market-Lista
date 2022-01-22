@@ -23,7 +23,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-is": "^16.8.0",
-    "react-native": "^0.67.1",
+    "react-native": "0.64.3",
     "react-native-gesture-handler": "~1.10.2",
     "react-native-ionicons": "^4.6.5",
     "react-native-masked-text": "*",

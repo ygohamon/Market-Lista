@@ -97,7 +97,7 @@ export default () => {
                         <InfosArea>
                             <CampoArea>
                                 <CampoNome placeholder="Produto" 
-                                    placeholderTextColor="#c98fcc" 
+                                    placeholderTextColor="#D3e23a" 
                                     value={nome} 
                                     onChangeText={nome => setNome(nome)} 
                                     returnKeyType="next" 
@@ -108,7 +108,7 @@ export default () => {
 
                             <CampoArea>
                                 <CampoQuantidade placeholder="Quantidade" 
-                                    placeholderTextColor="#c98fcc" 
+                                    placeholderTextColor="#D3e23a" 
                                     value={quantidade} 
                                     onChangeText={quantidade => setQuantidade(quantidade)} 
                                     keyboardType="number-pad" 
@@ -119,7 +119,7 @@ export default () => {
 
                                 <CampoPreco type={'money'}
                                     placeholder="Preço" 
-                                    placeholderTextColor="#c98fcc" 
+                                    placeholderTextColor="#D3e23a" 
                                     value={preco} 
                                     includeRawValueInChangeText={true}
                                     onChangeText={(text, masked)=>{
@@ -137,7 +137,7 @@ export default () => {
                         </InfosArea>
                     </JanelaInner>
                     <CloseButton onPress={handleCloseModal}>
-                        <FontAwesome name="close" size={24} color="#FFFFFF" />
+                        <FontAwesome name="close" size={24} color="#D3e23a" />
                     </CloseButton>
                 </Janela>
             </Fundo>

@@ -1,16 +1,14 @@
-import React, { useEffect, useState, useContext } from 'react';
-import { SwipeListView } from 'react-native-swipe-list-view';
+import React, { useContext, useEffect } from 'react';
+import {ScrollView} from 'react-native';
 
 import Header from '../../components/Header';
 import ListItem from '../../components/ListItem';
-import ListItemBack from '../../components/ListItemBack';
 
 import { Container, ListArea, Spacer } from './style'; 
 
 import AppContext from '../../contexts';
 
 export default () => {
-
     const { state, dispatch } = useContext(AppContext);
 
     const handleToggleDone = (item) => {
@@ -58,37 +56,28 @@ export default () => {
     }
 
     useEffect(()=>{
-        // getListas();
+        //console.log(state);
     }, []);
 
     return (
-        <Container behavior={ Platform.OS === 'ios' ? 'padding' : 'margin' }>
+        <Container>
             <Header titulo="Lista de Compras" />
             <ListArea>
+            <ScrollView>
                 {state.produtos.length > 0 && state.produtos.map((item,key) => {
                     if(state.show_done === false && item.done === true) return;
-                        return(
-
-                <SwipeListView 
-                    data={state.produtos} 
-                    keyExtractor={data => `${data.id}`} 
-                    renderItem={(data, rowMap) => <ListItem 
-                        id={data.item.id} 
-                        nome={data.item.nome} 
-                        quantidade={data.item.quantidade} 
-                        preco={data.item.preco} 
-                        done={data.item.done} 
-                        onPress={()=>handleToggleDone(data.item)}
-                        onLongPress={()=>handleEdit(data.item)} 
-                    />} 
-                    renderHiddenItem={ (data, rowMap) => <ListItemBack onDelete={()=>handleDelete(data.item)} onEdit={()=>handleEdit(data.item)} />}
-                    leftOpenValue={75}
-                    rightOpenValue={-75}
-                />
-                )
-
-            })}
-            <Spacer />
+                    return (
+                        <ListItem 
+                            key={key} 
+                            item={item}
+                            onPress={()=>{ handleToggleDone(item)}} 
+                            handleLeft={()=>{handleDelete(item)}}
+                            handleRight={()=>{handleEdit(item)}}
+                            />
+                    )
+                })}
+                <Spacer />
+            </ScrollView>
             </ListArea>
         </Container>
     );

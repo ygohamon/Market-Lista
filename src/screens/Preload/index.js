@@ -3,9 +3,7 @@ import LottieView from  "lottie-react-native";
 
 import { useNavigation } from '@react-navigation/native';
 
-import {
-    Container, Loading
-} from './styles';
+import { Container } from './styles';
 
 import AppContext from '../../contexts';
 import { Api } from '../../data';
@@ -37,14 +35,18 @@ export default () => {
                     name: 'MainTabs'
                 }]
             });
-        }, 500)
+        }, 800)
     },[]);
 
     return (
         <Container>
             <LottieView
-                width={300}
-                heigth={300}
+                style={{                
+                    width: 300,
+                    heigth: 300,
+                    alignContent: 'center',
+                    justifyContent: 'center'
+                }}
                 speed={1} 
                 source={require("../../assets/load.json")}
                 loop

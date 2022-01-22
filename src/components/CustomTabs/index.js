@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome5 } from '@expo/vector-icons';
 
 import {
     TabArea, 
@@ -35,19 +35,19 @@ export default () => {
             {appstate.show_done === false && <TabItem onPress={()=>{
                 handleShowDone(true);
             }}>
-                <FontAwesome 
+                <FontAwesome5 
                     name="eye-slash" 
                     size={24} 
-                    color="#833f8c"
+                    color="#fdf8ea"
                 />
             </TabItem>}
             {appstate.show_done === true && <TabItem onPress={()=>{
                 handleShowDone(false)
             }}>
-                <FontAwesome 
+                <FontAwesome5 
                     name="eye" 
                     size={26} 
-                    color="#833f8c"
+                    color="#fdf8ea"
                 />
             </TabItem>}
             <TabItemPreco>
@@ -56,8 +56,8 @@ export default () => {
                 </PrecoContainer>
             </TabItemPreco>
             <TabItemFilled onPress={handleModal}>
-                <FontAwesome 
-                    name="plus-square" 
+                <FontAwesome5 
+                    name="plus" 
                     size={24} 
                     color="#FFFFFF" 
                 />

@@ -9,8 +9,8 @@ const Tabs = createBottomTabNavigator();
 
 export default () => {
     return (
-        <Tabs.Navigator tabBar={props=><CustomTabs {...props} />}>
-            <Tabs.Screen name="Home" component={Home} />
+        <Tabs.Navigator tabBar={props=><CustomTabs {...props} />} screenOptions={{ headerShown: false }}>
+            <Tabs.Screen name="Home" component={Home} screenOptions={{ headerShown: false }} />
         </Tabs.Navigator>
     );
 }
