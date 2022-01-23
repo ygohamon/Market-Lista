@@ -1,5 +1,3 @@
-import { Touchable } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import styled from 'styled-components/native';
 
 export const ListItemContainer = styled.View`

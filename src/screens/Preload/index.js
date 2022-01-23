@@ -43,7 +43,6 @@ export default () => {
             <LottieView
                 style={{                
                     width: 300,
-                    heigth: 300,
                     alignContent: 'center',
                     justifyContent: 'center'
                 }}

@@ -1,19 +1,20 @@
 import styled from 'styled-components/native';
 
 export const HeaderArea = styled.View`
-    width: 100%;
+
     position: relative;
+    backgroundColor: #eebb2c;
 `;
 
-export const HeaderImage = styled.Image.attrs({
-    resizeMode: 'cover',
-    overflow: 'visible'
-})`
-    width: 100%;
-    height: 180px;
-    z-index: 4; 
-    flex-direction: row;
-`;
+// export const HeaderImage = styled.View`
+//     border-radius: 200px;
+//     background-color: #D3e23a;
+//     align-self: center;
+//     justify-content: center;
+//     width: 30%;
+//     height: 30%;
+//     position: relative;
+// `;
 
 export const HeaderTitleArea = styled.View`
     flex-direction: row;

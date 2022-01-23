@@ -1,4 +1,6 @@
 import React from 'react';
+import LottieView from  "lottie-react-native";
+import View from 'react-native'
 import {
     HeaderArea, 
     HeaderImage, 
@@ -10,9 +12,19 @@ export default ({titulo}) => {
 
     return (
         <HeaderArea>
-            <HeaderImage source={
-                require('../../assets/orange4.gif')
-            } />
+        
+            <LottieView
+                style={{                
+                    width: '25%',
+                    alignSelf: 'center',
+                    justifyContent: 'center',
+                }}
+                speed={1} 
+                source={require("../../assets/home.json")}
+                loop
+                autoPlay
+            />
+            
             <HeaderTitleArea>
                 <HeaderTitle>{titulo}</HeaderTitle>
             </HeaderTitleArea>
