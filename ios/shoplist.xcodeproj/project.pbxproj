@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* shoplistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* shoplistTests.m */; };
-		0AC57BA28EBA329CCE54D35E /* libPods-shoplist.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC73B1CB7D1132D834E5238 /* libPods-shoplist.a */; };
+		00E356F31AD99517003FC87E /* marketlistaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* marketlistaTests.m */; };
+		0AC57BA28EBA329CCE54D35E /* libPods-marketlista.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAC73B1CB7D1132D834E5238 /* libPods-marketlista.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* shoplistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* shoplistTests.m */; };
-		2E00DA91D63E6F635F3FADF0 /* libPods-shoplist-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22745D56426D46D6643402B2 /* libPods-shoplist-tvOSTests.a */; };
-		7B0E32A03F58CA2DCA5E1F34 /* libPods-shoplist-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C355553D88219F4F4AF1E29E /* libPods-shoplist-tvOS.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* marketlistaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* marketlistaTests.m */; };
+		2E00DA91D63E6F635F3FADF0 /* libPods-marketlista-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22745D56426D46D6643402B2 /* libPods-marketlista-tvOSTests.a */; };
+		7B0E32A03F58CA2DCA5E1F34 /* libPods-marketlista-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C355553D88219F4F4AF1E29E /* libPods-marketlista-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		CFBBEBDFED30BDCC2E74CF21 /* libPods-shoplist-shoplistTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B11FDE549F741D49935FE8 /* libPods-shoplist-shoplistTests.a */; };
+		CFBBEBDFED30BDCC2E74CF21 /* libPods-marketlista-marketlistaTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 17B11FDE549F741D49935FE8 /* libPods-marketlista-marketlistaTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,61 +28,61 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = shoplist;
+			remoteInfo = marketlista;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "shoplist-tvOS";
+			remoteInfo = "marketlista-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* shoplistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = shoplistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* marketlistaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = marketlistaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* shoplistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shoplistTests.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* marketlistaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = marketlistaTests.m; sourceTree = "<group>"; };
 		119D58C88B8544BEA5C0FE52 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* shoplist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shoplist.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = shoplist/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = shoplist/AppDelegate.m; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = shoplist/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = shoplist/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = shoplist/main.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* marketlista.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = marketlista.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = marketlista/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = marketlista/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = marketlista/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = marketlista/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = marketlista/main.m; sourceTree = "<group>"; };
 		13EE7091E68E4584854483FD /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		17B11FDE549F741D49935FE8 /* libPods-shoplist-shoplistTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shoplist-shoplistTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B11FDE549F741D49935FE8 /* libPods-marketlista-marketlistaTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-marketlista-marketlistaTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		181AE099994D497496D8E2D8 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		1C36300231FA4D369B18E3D3 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		22745D56426D46D6643402B2 /* libPods-shoplist-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shoplist-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		22745D56426D46D6643402B2 /* libPods-marketlista-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-marketlista-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		228CB4FF24BA4D2B9E399105 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* shoplist-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "shoplist-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* shoplist-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "shoplist-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E2C60484349C3DBE9DF12C1 /* Pods-shoplist-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoplist-tvOS.release.xcconfig"; path = "Target Support Files/Pods-shoplist-tvOS/Pods-shoplist-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* marketlista-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "marketlista-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* marketlista-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "marketlista-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E2C60484349C3DBE9DF12C1 /* Pods-marketlista-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marketlista-tvOS.release.xcconfig"; path = "Target Support Files/Pods-marketlista-tvOS/Pods-marketlista-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		34AC5243A7A740ACAF5F55D8 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		4271B7152E834620949F09A7 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		4455D0D4D51D4DAFB5025FF8 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
-		46AA226344F9EA5E6AFD1A3B /* Pods-shoplist-shoplistTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoplist-shoplistTests.debug.xcconfig"; path = "Target Support Files/Pods-shoplist-shoplistTests/Pods-shoplist-shoplistTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5D154850BB1BF10E4C1B5A25 /* Pods-shoplist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoplist.debug.xcconfig"; path = "Target Support Files/Pods-shoplist/Pods-shoplist.debug.xcconfig"; sourceTree = "<group>"; };
+		46AA226344F9EA5E6AFD1A3B /* Pods-marketlista-marketlistaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marketlista-marketlistaTests.debug.xcconfig"; path = "Target Support Files/Pods-marketlista-marketlistaTests/Pods-marketlista-marketlistaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D154850BB1BF10E4C1B5A25 /* Pods-marketlista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marketlista.debug.xcconfig"; path = "Target Support Files/Pods-marketlista/Pods-marketlista.debug.xcconfig"; sourceTree = "<group>"; };
 		8019BCD4BE4F453CA718E98C /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = shoplist/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		98A73207E2C7EF9A346A190C /* Pods-shoplist-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoplist-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-shoplist-tvOSTests/Pods-shoplist-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9DF18DED49D8994C5AE1D644 /* Pods-shoplist-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoplist-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-shoplist-tvOS/Pods-shoplist-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = marketlista/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98A73207E2C7EF9A346A190C /* Pods-marketlista-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marketlista-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-marketlista-tvOSTests/Pods-marketlista-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9DF18DED49D8994C5AE1D644 /* Pods-marketlista-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marketlista-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-marketlista-tvOS/Pods-marketlista-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		A27D77AF38C143739058E68A /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		AA263A25E910478D9DF66938 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		B4E4A29B18A34DB1BF1865C5 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
-		C355553D88219F4F4AF1E29E /* libPods-shoplist-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shoplist-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C355553D88219F4F4AF1E29E /* libPods-marketlista-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-marketlista-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C70EE61F92F3441D9032D33A /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		D022F62BFF33AF324CA936AC /* Pods-shoplist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoplist.release.xcconfig"; path = "Target Support Files/Pods-shoplist/Pods-shoplist.release.xcconfig"; sourceTree = "<group>"; };
+		D022F62BFF33AF324CA936AC /* Pods-marketlista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marketlista.release.xcconfig"; path = "Target Support Files/Pods-marketlista/Pods-marketlista.release.xcconfig"; sourceTree = "<group>"; };
 		D390B79CE82A4305A45D933C /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		D6FADC0AAC654906AEEF726C /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		E5C2D6BB2A1543F9A5A58554 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
-		EAC73B1CB7D1132D834E5238 /* libPods-shoplist.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-shoplist.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAC73B1CB7D1132D834E5238 /* libPods-marketlista.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-marketlista.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F29418E54B533BA02ADB0F38 /* Pods-shoplist-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoplist-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-shoplist-tvOSTests/Pods-shoplist-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		F2ACD4CDB8CAD939B568B45C /* Pods-shoplist-shoplistTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-shoplist-shoplistTests.release.xcconfig"; path = "Target Support Files/Pods-shoplist-shoplistTests/Pods-shoplist-shoplistTests.release.xcconfig"; sourceTree = "<group>"; };
+		F29418E54B533BA02ADB0F38 /* Pods-marketlista-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marketlista-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-marketlista-tvOSTests/Pods-marketlista-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		F2ACD4CDB8CAD939B568B45C /* Pods-marketlista-marketlistaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-marketlista-marketlistaTests.release.xcconfig"; path = "Target Support Files/Pods-marketlista-marketlistaTests/Pods-marketlista-marketlistaTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CFBBEBDFED30BDCC2E74CF21 /* libPods-shoplist-shoplistTests.a in Frameworks */,
+				CFBBEBDFED30BDCC2E74CF21 /* libPods-marketlista-marketlistaTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AC57BA28EBA329CCE54D35E /* libPods-shoplist.a in Frameworks */,
+				0AC57BA28EBA329CCE54D35E /* libPods-marketlista.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B0E32A03F58CA2DCA5E1F34 /* libPods-shoplist-tvOS.a in Frameworks */,
+				7B0E32A03F58CA2DCA5E1F34 /* libPods-marketlista-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,20 +114,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2E00DA91D63E6F635F3FADF0 /* libPods-shoplist-tvOSTests.a in Frameworks */,
+				2E00DA91D63E6F635F3FADF0 /* libPods-marketlista-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* shoplistTests */ = {
+		00E356EF1AD99517003FC87E /* marketlistaTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* shoplistTests.m */,
+				00E356F21AD99517003FC87E /* marketlistaTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = shoplistTests;
+			path = marketlistaTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -138,7 +138,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* shoplist */ = {
+		13B07FAE1A68108700A75B9A /* marketlista */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -149,7 +149,7 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = shoplist;
+			name = marketlista;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -157,10 +157,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				EAC73B1CB7D1132D834E5238 /* libPods-shoplist.a */,
-				17B11FDE549F741D49935FE8 /* libPods-shoplist-shoplistTests.a */,
-				C355553D88219F4F4AF1E29E /* libPods-shoplist-tvOS.a */,
-				22745D56426D46D6643402B2 /* libPods-shoplist-tvOSTests.a */,
+				EAC73B1CB7D1132D834E5238 /* libPods-marketlista.a */,
+				17B11FDE549F741D49935FE8 /* libPods-marketlista-marketlistaTests.a */,
+				C355553D88219F4F4AF1E29E /* libPods-marketlista-tvOS.a */,
+				22745D56426D46D6643402B2 /* libPods-marketlista-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -198,9 +198,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* shoplist */,
+				13B07FAE1A68108700A75B9A /* marketlista */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* shoplistTests */,
+				00E356EF1AD99517003FC87E /* marketlistaTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				4E8399F1E7DF472E9CDC83B1 /* Resources */,
@@ -214,10 +214,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* shoplist.app */,
-				00E356EE1AD99517003FC87E /* shoplistTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* shoplist-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* shoplist-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* marketlista.app */,
+				00E356EE1AD99517003FC87E /* marketlistaTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* marketlista-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* marketlista-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -225,14 +225,14 @@
 		A33F8ABBE43D8C7EB27A7C4D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5D154850BB1BF10E4C1B5A25 /* Pods-shoplist.debug.xcconfig */,
-				D022F62BFF33AF324CA936AC /* Pods-shoplist.release.xcconfig */,
-				46AA226344F9EA5E6AFD1A3B /* Pods-shoplist-shoplistTests.debug.xcconfig */,
-				F2ACD4CDB8CAD939B568B45C /* Pods-shoplist-shoplistTests.release.xcconfig */,
-				9DF18DED49D8994C5AE1D644 /* Pods-shoplist-tvOS.debug.xcconfig */,
-				2E2C60484349C3DBE9DF12C1 /* Pods-shoplist-tvOS.release.xcconfig */,
-				98A73207E2C7EF9A346A190C /* Pods-shoplist-tvOSTests.debug.xcconfig */,
-				F29418E54B533BA02ADB0F38 /* Pods-shoplist-tvOSTests.release.xcconfig */,
+				5D154850BB1BF10E4C1B5A25 /* Pods-marketlista.debug.xcconfig */,
+				D022F62BFF33AF324CA936AC /* Pods-marketlista.release.xcconfig */,
+				46AA226344F9EA5E6AFD1A3B /* Pods-marketlista-marketlistaTests.debug.xcconfig */,
+				F2ACD4CDB8CAD939B568B45C /* Pods-marketlista-marketlistaTests.release.xcconfig */,
+				9DF18DED49D8994C5AE1D644 /* Pods-marketlista-tvOS.debug.xcconfig */,
+				2E2C60484349C3DBE9DF12C1 /* Pods-marketlista-tvOS.release.xcconfig */,
+				98A73207E2C7EF9A346A190C /* Pods-marketlista-tvOSTests.debug.xcconfig */,
+				F29418E54B533BA02ADB0F38 /* Pods-marketlista-tvOSTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -240,9 +240,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* shoplistTests */ = {
+		00E356ED1AD99517003FC87E /* marketlistaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "shoplistTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "marketlistaTests" */;
 			buildPhases = (
 				FA545584D0ABE110FD750F83 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -256,14 +256,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = shoplistTests;
-			productName = shoplistTests;
-			productReference = 00E356EE1AD99517003FC87E /* shoplistTests.xctest */;
+			name = marketlistaTests;
+			productName = marketlistaTests;
+			productReference = 00E356EE1AD99517003FC87E /* marketlistaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* shoplist */ = {
+		13B07F861A680F5B00A75B9A /* marketlista */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "shoplist" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "marketlista" */;
 			buildPhases = (
 				4D938FCA8B491B78FC636695 /* [CP] Check Pods Manifest.lock */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
@@ -278,14 +278,14 @@
 			);
 			dependencies = (
 			);
-			name = shoplist;
-			productName = shoplist;
-			productReference = 13B07F961A680F5B00A75B9A /* shoplist.app */;
+			name = marketlista;
+			productName = marketlista;
+			productReference = 13B07F961A680F5B00A75B9A /* marketlista.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* shoplist-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* marketlista-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "shoplist-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "marketlista-tvOS" */;
 			buildPhases = (
 				98546224643C170FCE0F1DD8 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -298,14 +298,14 @@
 			);
 			dependencies = (
 			);
-			name = "shoplist-tvOS";
-			productName = "shoplist-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* shoplist-tvOS.app */;
+			name = "marketlista-tvOS";
+			productName = "marketlista-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* marketlista-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* shoplist-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* marketlista-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "shoplist-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "marketlista-tvOSTests" */;
 			buildPhases = (
 				591660F21B930CB92C670EA2 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -317,9 +317,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "shoplist-tvOSTests";
-			productName = "shoplist-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* shoplist-tvOSTests.xctest */;
+			name = "marketlista-tvOSTests";
+			productName = "marketlista-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* marketlista-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -349,7 +349,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "shoplist" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "marketlista" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -362,10 +362,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* shoplist */,
-				00E356ED1AD99517003FC87E /* shoplistTests */,
-				2D02E47A1E0B4A5D006451C7 /* shoplist-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* shoplist-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* marketlista */,
+				00E356ED1AD99517003FC87E /* marketlistaTests */,
+				2D02E47A1E0B4A5D006451C7 /* marketlista-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* marketlista-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -448,7 +448,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-shoplist-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-marketlista-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -470,7 +470,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-shoplist-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-marketlista-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -483,7 +483,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-shoplist-shoplistTests/Pods-shoplist-shoplistTests-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-marketlista-marketlistaTests/Pods-marketlista-marketlistaTests-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -524,7 +524,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shoplist-shoplistTests/Pods-shoplist-shoplistTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-marketlista-marketlistaTests/Pods-marketlista-marketlistaTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8910C4E0A24CA2FAE8E6B9BF /* [CP] Embed Pods Frameworks */ = {
@@ -533,7 +533,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-shoplist/Pods-shoplist-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-marketlista/Pods-marketlista-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -542,7 +542,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shoplist/Pods-shoplist-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-marketlista/Pods-marketlista-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		98546224643C170FCE0F1DD8 /* [CP] Check Pods Manifest.lock */ = {
@@ -560,7 +560,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-shoplist-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-marketlista-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -573,7 +573,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-shoplist/Pods-shoplist-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-marketlista/Pods-marketlista-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
 			);
@@ -584,7 +584,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shoplist/Pods-shoplist-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-marketlista/Pods-marketlista-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE4128FD2C4CF27B3889A161 /* [CP] Embed Pods Frameworks */ = {
@@ -593,7 +593,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-shoplist-shoplistTests/Pods-shoplist-shoplistTests-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-marketlista-marketlistaTests/Pods-marketlista-marketlistaTests-frameworks.sh",
 				"${PODS_XCFRAMEWORKS_BUILD_DIR}/OpenSSL/OpenSSL.framework/OpenSSL",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -602,7 +602,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-shoplist-shoplistTests/Pods-shoplist-shoplistTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-marketlista-marketlistaTests/Pods-marketlista-marketlistaTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FA545584D0ABE110FD750F83 /* [CP] Check Pods Manifest.lock */ = {
@@ -620,7 +620,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-shoplist-shoplistTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-marketlista-marketlistaTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -672,7 +672,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* shoplistTests.m in Sources */,
+				00E356F31AD99517003FC87E /* marketlistaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +698,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* shoplistTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* marketlistaTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -707,12 +707,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* shoplist */;
+			target = 13B07F861A680F5B00A75B9A /* marketlista */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* shoplist-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* marketlista-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -720,14 +720,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46AA226344F9EA5E6AFD1A3B /* Pods-shoplist-shoplistTests.debug.xcconfig */;
+			baseConfigurationReference = 46AA226344F9EA5E6AFD1A3B /* Pods-marketlista-marketlistaTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = shoplistTests/Info.plist;
+				INFOPLIST_FILE = marketlistaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -737,17 +737,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shoplist.app/shoplist";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marketlista.app/marketlista";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F2ACD4CDB8CAD939B568B45C /* Pods-shoplist-shoplistTests.release.xcconfig */;
+			baseConfigurationReference = F2ACD4CDB8CAD939B568B45C /* Pods-marketlista-marketlistaTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = shoplistTests/Info.plist;
+				INFOPLIST_FILE = marketlistaTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -757,28 +757,28 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shoplist.app/shoplist";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marketlista.app/marketlista";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D154850BB1BF10E4C1B5A25 /* Pods-shoplist.debug.xcconfig */;
+			baseConfigurationReference = 5D154850BB1BF10E4C1B5A25 /* Pods-marketlista.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7274Y79J29;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = shoplist/Info.plist;
+				INFOPLIST_FILE = marketlista/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.jrdev.shoplist;
-				PRODUCT_NAME = shoplist;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jrdev.marketlista;
+				PRODUCT_NAME = marketlista;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -787,21 +787,21 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D022F62BFF33AF324CA936AC /* Pods-shoplist.release.xcconfig */;
+			baseConfigurationReference = D022F62BFF33AF324CA936AC /* Pods-marketlista.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 7274Y79J29;
-				INFOPLIST_FILE = shoplist/Info.plist;
+				INFOPLIST_FILE = marketlista/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.jrdev.shoplist;
-				PRODUCT_NAME = shoplist;
+				PRODUCT_BUNDLE_IDENTIFIER = org.jrdev.marketlista;
+				PRODUCT_NAME = marketlista;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -809,7 +809,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DF18DED49D8994C5AE1D644 /* Pods-shoplist-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 9DF18DED49D8994C5AE1D644 /* Pods-marketlista-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -820,14 +820,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "shoplist-tvOS/Info.plist";
+				INFOPLIST_FILE = "marketlista-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.shoplist-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.marketlista-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -837,7 +837,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E2C60484349C3DBE9DF12C1 /* Pods-shoplist-tvOS.release.xcconfig */;
+			baseConfigurationReference = 2E2C60484349C3DBE9DF12C1 /* Pods-marketlista-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -848,14 +848,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "shoplist-tvOS/Info.plist";
+				INFOPLIST_FILE = "marketlista-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.shoplist-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.marketlista-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -865,7 +865,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 98A73207E2C7EF9A346A190C /* Pods-shoplist-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 98A73207E2C7EF9A346A190C /* Pods-marketlista-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -875,24 +875,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "shoplist-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "marketlista-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.shoplist-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.marketlista-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shoplist-tvOS.app/shoplist-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marketlista-tvOS.app/marketlista-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F29418E54B533BA02ADB0F38 /* Pods-shoplist-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = F29418E54B533BA02ADB0F38 /* Pods-marketlista-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -902,17 +902,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "shoplist-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "marketlista-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.shoplist-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.marketlista-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/shoplist-tvOS.app/shoplist-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/marketlista-tvOS.app/marketlista-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -1033,7 +1033,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "shoplistTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "marketlistaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1042,7 +1042,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "shoplist" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "marketlista" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1051,7 +1051,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "shoplist-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "marketlista-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1060,7 +1060,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "shoplist-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "marketlista-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1069,7 +1069,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "shoplist" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "marketlista" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

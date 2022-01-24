@@ -129,7 +129,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.shoplist"
+        applicationId "marketlista"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

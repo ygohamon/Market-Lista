@@ -1,18 +1,24 @@
 {
-  "name": "shoplist",
-  "displayName": "Lista de Compras",
+  "name": "marketlista",
+  "displayName": "Market Lista",
   "expo": {
-    "name": "Lista de Compras",
+    "name": "Market Lista",
     "icon": "./assets/sacola.png",
     "version": "1.0.0",
     "slug": "YgoHamon",
     "ios": {
-      "bundleIdentifier": "com.ravsytem.ygohamon",
-      "buildNumber": "1.0.0"
+      "bundleIdentifier": "marketlista",
+      "buildNumber": "1.0.0",
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-6444686362000646~5821941817"
+      }
     },
     "android": {
-      "package": "com.ravsytem.ygohamon",
-      "versionCode": 1
+      "package": "marketlista",
+      "versionCode": 1,
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-6444686362000646~5821941817"
+      }
     }
    }
   

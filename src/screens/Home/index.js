@@ -4,9 +4,16 @@ import {ScrollView} from 'react-native';
 import Header from '../../components/Header';
 import ListItem from '../../components/ListItem';
 
+import {
+    AdMobBanner,
+    setTestDeviceIDAsync
+  } from 'expo-ads-admob';
+
 import { Container, ListArea, Spacer } from './style'; 
 
 import AppContext from '../../contexts';
+
+
 
 export default () => {
     const { state, dispatch } = useContext(AppContext);
@@ -62,6 +69,11 @@ export default () => {
     return (
         <Container>
             <Header titulo="Lista de Compras" />
+            <AdMobBanner
+                bannerSize="fullBanner"
+                adUnitID="ca-app-pub-6444686362000646/4563333489" 
+                setTestDeviceIDAsync
+                servePersonalizedAds />
             <ListArea>
             <ScrollView>
                 {state.produtos.length > 0 && state.produtos.map((item,key) => {
