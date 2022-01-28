@@ -1,23 +1,21 @@
 {
-  "name": "marketlista",
-  "displayName": "Market Lista",
   "expo": {
     "name": "Market Lista",
     "icon": "./assets/sacola.png",
-    "version": "1.0.0",
+    "version": "2.0.0",
     "slug": "YgoHamon",
     "ios": {
-      "bundleIdentifier": "marketlista",
+      "bundleIdentifier": "com.marketlista",
       "buildNumber": "1.0.0",
       "config": {
-        "googleMobileAdsAppId": "ca-app-pub-6444686362000646~5821941817"
+        "googleMobileAdsAppId": "ca-app-pub-3940256099942544~3347511713"
       }
     },
     "android": {
-      "package": "marketlista",
+      "package": "com.marketlista",
       "versionCode": 1,
       "config": {
-        "googleMobileAdsAppId": "ca-app-pub-6444686362000646~5821941817"
+        "googleMobileAdsAppId": "ca-app-pub-3940256099942544~3347511713"
       }
     }
    }

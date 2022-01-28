@@ -71,9 +71,12 @@ export default () => {
             <Header titulo="Lista de Compras" />
             <AdMobBanner
                 bannerSize="fullBanner"
-                adUnitID="ca-app-pub-6444686362000646/4563333489" 
+                adUnitID="ca-app-pub-3940256099942544/6300978111" 
                 setTestDeviceIDAsync
-                servePersonalizedAds />
+                servePersonalizedAds 
+                style={{
+                    alignSelf: 'center',
+                    }}/>
             <ListArea>
             <ScrollView>
                 {state.produtos.length > 0 && state.produtos.map((item,key) => {
