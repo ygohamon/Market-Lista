@@ -8,6 +8,7 @@
     "eject": "expo eject"
   },
   "dependencies": {
+    "@expo/metro-config": "^0.3.9",
     "@expo/vector-icons": "^12.0.0",
     "@fortawesome/react-native-fontawesome": "^0.2.7",
     "@react-native-async-storage/async-storage": "~1.15.0",

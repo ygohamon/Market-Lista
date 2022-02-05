@@ -6,7 +6,7 @@ export const TabArea = styled.View`
     justify-content: space-between;
     width: 100%;
     height: 60px;
-    background-color: #eebb2c;
+    background-color: #393939;
 `;
 export const TabItem = styled.TouchableOpacity`
     flex: 1;
@@ -16,11 +16,11 @@ export const TabItem = styled.TouchableOpacity`
 `;
 
 export const TabItemFilled = styled(TabItem)`
-    background-color: #D3e23a;
+    background-color: #393939;
 `;
 
 export const TabItemPreco = styled(TabItem)`
-    background-color: #f4aa51;
+    background-color: #393939;
 `;
 
 export const PrecoContainer = styled.View`

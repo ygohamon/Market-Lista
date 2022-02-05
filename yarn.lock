@@ -1137,6 +1137,23 @@
   resolved "https://registry.npmjs.org/@expo/config-types/-/config-types-43.0.1.tgz"
   integrity sha512-EtllpCGDdB/UdwAIs5YXJwBLpbFQNdlLLrxIvoILA9cXrpQMWkeDCT9lQPJzFRMFcLUaMuGvkzX2tR4tx5EQFQ==
 
+"@expo/config@6.0.16", "@expo/config@^6.0.6":
+  version "6.0.16"
+  resolved "https://registry.npmjs.org/@expo/config/-/config-6.0.16.tgz"
+  integrity sha512-4UgBiEtj03zI9X0iUNClnY3Y7uUGSvmMNAfPTSpKOsYsb0S+mSN+B66fuB+H+12SUldqxDH695g5lpeIrkCiJA==
+  dependencies:
+    "@babel/code-frame" "~7.10.4"
+    "@expo/config-plugins" "4.0.16"
+    "@expo/config-types" "^43.0.1"
+    "@expo/json-file" "8.2.34"
+    getenv "^1.0.0"
+    glob "7.1.6"
+    require-from-string "^2.0.2"
+    resolve-from "^5.0.0"
+    semver "7.3.2"
+    slugify "^1.3.4"
+    sucrase "^3.20.0"
+
 "@expo/config@6.0.6":
   version "6.0.6"
   resolved "https://registry.npmjs.org/@expo/config/-/config-6.0.6.tgz"
@@ -1146,23 +1163,6 @@
     "@expo/config-plugins" "4.0.6"
     "@expo/config-types" "^43.0.1"
     "@expo/json-file" "8.2.33"
-    getenv "^1.0.0"
-    glob "7.1.6"
-    require-from-string "^2.0.2"
-    resolve-from "^5.0.0"
-    semver "7.3.2"
-    slugify "^1.3.4"
-    sucrase "^3.20.0"
-
-"@expo/config@^6.0.6":
-  version "6.0.16"
-  resolved "https://registry.npmjs.org/@expo/config/-/config-6.0.16.tgz"
-  integrity sha512-4UgBiEtj03zI9X0iUNClnY3Y7uUGSvmMNAfPTSpKOsYsb0S+mSN+B66fuB+H+12SUldqxDH695g5lpeIrkCiJA==
-  dependencies:
-    "@babel/code-frame" "~7.10.4"
-    "@expo/config-plugins" "4.0.16"
-    "@expo/config-types" "^43.0.1"
-    "@expo/json-file" "8.2.34"
     getenv "^1.0.0"
     glob "7.1.6"
     require-from-string "^2.0.2"
@@ -1188,6 +1188,19 @@
     "@babel/code-frame" "~7.10.4"
     json5 "^1.0.1"
     write-file-atomic "^2.3.0"
+
+"@expo/metro-config@^0.3.9":
+  version "0.3.9"
+  resolved "https://registry.yarnpkg.com/@expo/metro-config/-/metro-config-0.3.9.tgz#41e04b7941fc74809852af16fca05b950741da6e"
+  integrity sha512-mtTc+LXdhRAux42OXK25EbPFGCWHn0r4iRJwhGq23nLP1YUWsA8TQJ2QOrYSdTE6FeH2ZyrSBpdJmwQD50GENg==
+  dependencies:
+    "@expo/config" "6.0.16"
+    "@expo/json-file" "8.2.34"
+    chalk "^4.1.0"
+    debug "^4.3.2"
+    find-yarn-workspace-root "~2.0.0"
+    getenv "^1.0.0"
+    sucrase "^3.20.0"
 
 "@expo/metro-config@~0.2.6":
   version "0.2.8"
@@ -2925,6 +2938,13 @@ find-up@^5.0.0, find-up@~5.0.0:
   dependencies:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
+
+find-yarn-workspace-root@~2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/find-yarn-workspace-root/-/find-yarn-workspace-root-2.0.0.tgz#f47fb8d239c900eb78179aa81b66673eac88f7bd"
+  integrity sha512-1IMnbjt4KzsQfnhnzNd8wUEgXZ44IzZaZmnLYx7D5FZlaHt2gW20Cri8Q+E/t5tIj4+epTBub+2Zxu/vNILzqQ==
+  dependencies:
+    micromatch "^4.0.2"
 
 flow-parser@0.*:
   version "0.169.0"

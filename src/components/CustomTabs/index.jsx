@@ -38,7 +38,7 @@ export default () => {
                 <FontAwesome5 
                     name="eye-slash" 
                     size={24} 
-                    color="#fdf8ea"
+                    color="#eebb2c"
                 />
             </TabItem>}
             {appstate.show_done === true && <TabItem onPress={()=>{
@@ -47,7 +47,7 @@ export default () => {
                 <FontAwesome5 
                     name="eye" 
                     size={26} 
-                    color="#fdf8ea"
+                    color="#eebb2c"
                 />
             </TabItem>}
             <TabItemPreco>
@@ -59,7 +59,7 @@ export default () => {
                 <FontAwesome5 
                     name="plus" 
                     size={24} 
-                    color="#FFFFFF" 
+                    color="#D3e23a" 
                 />
             </TabItemFilled>
         </TabArea>

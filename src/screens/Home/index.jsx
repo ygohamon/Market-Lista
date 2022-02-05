@@ -71,7 +71,7 @@ export default () => {
             <Header titulo="Lista de Compras" />
             <AdMobBanner
                 bannerSize="fullBanner"
-                adUnitID="ca-app-pub-3940256099942544/6300978111" 
+                adUnitID="ca-app-pub-6444686362000646/4563333489" 
                 setTestDeviceIDAsync
                 servePersonalizedAds 
                 style={{
