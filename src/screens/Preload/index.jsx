@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
 import LottieView from  "lottie-react-native";
 
 import { useNavigation } from '@react-navigation/native';

@@ -72,7 +72,6 @@ export default () => {
             <AdMobBanner
                 bannerSize="fullBanner"
                 adUnitID="ca-app-pub-6444686362000646/4563333489" 
-                setTestDeviceIDAsync
                 servePersonalizedAds 
                 style={{
                     alignSelf: 'center',
