@@ -70,12 +70,9 @@ export default () => {
         <Container>
             <Header titulo="Lista de Compras" />
             <AdMobBanner
-                bannerSize="fullBanner"
+                bannerSize="smartBannerPortrait"
                 adUnitID="ca-app-pub-6444686362000646/4563333489" 
-                servePersonalizedAds 
-                style={{
-                    alignSelf: 'center',
-                    }}/>
+                servePersonalizedAds />
             <ListArea>
             <ScrollView>
                 {state.produtos.length > 0 && state.produtos.map((item,key) => {
