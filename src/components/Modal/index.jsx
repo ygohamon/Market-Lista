@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useRef } from 'react';
 import { Alert, Platform } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
@@ -17,19 +17,18 @@ export default () => {
     const [preco, setPreco] = useState(state.is_edit ? state.edit_item.preco : '');
     const [precoMasked, setPrecoMasked] = useState(state.is_edit ? state.edit_item.preco : '');
 
-    let nomeInput = null;
-    
+    const nomeInput = useRef(null);
+    const quantidadeInput = useRef(null);
+    const precoInput = useRef(null);
+
     const handleOperation = () => {
-
-        //console.log(precoMasked);
-
-        if(!nome || nome == ''){
-            Alert.alert('Atenção','Preencha o nome!');
+        if (!nome || nome == '') {
+            Alert.alert('Atenção', 'Preencha o nome!');
             return;
         }
 
         let newItem = {
-            id: state.is_edit ? id : Math.random()*100000,
+            id: state.is_edit ? id : Math.random() * 100000,
             quantidade: quantidade === 0 || quantidade === '' || quantidade === undefined ? '1' : quantidade,
             nome: nome,
             preco: isNaN(precoMasked) || precoMasked == '' ? '0' : precoMasked,
@@ -37,19 +36,14 @@ export default () => {
         }
 
         dispatch({
-            type: state.is_edit ? 'handleEditProduto' : 'handleAddNewProduto', 
+            type: state.is_edit ? 'handleEditProduto' : 'handleAddNewProduto',
             payload: newItem
         });
 
-        dispatch({
-            type: 'handleTotal',
-            payload: true
-        })
+        dispatch({ type: 'handleTotal', payload: true });
 
         handleCloseModal();
     }
-
-
 
     const handleCloseModal = () => {
         setId('');
@@ -58,90 +52,81 @@ export default () => {
         setPreco('');
         setPrecoMasked('');
 
-        dispatch({
-            type:'setEditItem',
-            payload: {}
-        });
-        
-        dispatch({
-            type:'handleIsEdit',
-            payload: false
-        });
-
-        dispatch({
-            type:'handleModal',
-            payload: false
-        });
+        dispatch({ type: 'setEditItem', payload: {} });
+        dispatch({ type: 'handleIsEdit', payload: false });
+        dispatch({ type: 'handleModal', payload: false });
     }
 
     return (
-        <Modal 
+        <Modal
             animationType="slide"
             transparent={true}
-            visible={state.show_modal} 
+            visible={state.show_modal}
             onShow={() => {
-                if(state.is_edit){
+                if (state.is_edit) {
                     setId(state.edit_item.id);
                     setNome(state.edit_item.nome);
                     setQuantidade(state.edit_item.quantidade.toString());
                     setPreco(state.edit_item.preco);
                     setPrecoMasked(state.edit_item.preco);
                 }
-                nomeInput.focus();
+                nomeInput.current?.focus();
             }}
         >
-            <Fundo behavior={Platform.OS === 'ios' ? 'padding' : 'height' }>
+            <Fundo behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
                 <Janela>
-                    <Titulo>{ state.is_edit ? 'Alterar Produto' : 'Adicionar Produto' }</Titulo>
+                    <Titulo>{state.is_edit ? 'Alterar Produto' : 'Adicionar Produto'}</Titulo>
                     <JanelaInner>
                         <InfosArea>
                             <CampoArea>
-                                <CampoNome placeholder="Produto" 
-                                    placeholderTextColor="#D3e23a" 
-                                    value={nome} 
-                                    onChangeText={nome => setNome(nome)} 
-                                    returnKeyType="next" 
-                                    ref={(input) => { nomeInput = input; }} 
-                                    onSubmitEditing={() => { quantidadeInput.focus(); }} 
+                                <CampoNome
+                                    placeholder="Produto"
+                                    placeholderTextColor="#9094A6"
+                                    value={nome}
+                                    onChangeText={nome => setNome(nome)}
+                                    returnKeyType="next"
+                                    ref={nomeInput}
+                                    onSubmitEditing={() => quantidadeInput.current?.focus()}
                                     blurOnSubmit={false} />
                             </CampoArea>
 
                             <CampoArea>
-                                <CampoQuantidade placeholder="Quantidade" 
-                                    placeholderTextColor="#D3e23a" 
-                                    value={quantidade} 
-                                    onChangeText={quantidade => setQuantidade(quantidade)} 
-                                    keyboardType="number-pad" 
-                                    returnKeyType="next" 
-                                    ref={(input) => { quantidadeInput = input; }} 
-                                    onSubmitEditing={() => { precoInput.getElement().focus(); }} 
+                                <CampoQuantidade
+                                    placeholder="Qtd"
+                                    placeholderTextColor="#9094A6"
+                                    value={quantidade}
+                                    onChangeText={quantidade => setQuantidade(quantidade)}
+                                    keyboardType="number-pad"
+                                    returnKeyType="next"
+                                    ref={quantidadeInput}
+                                    onSubmitEditing={() => precoInput.current?.getElement().focus()}
                                     blurOnSubmit={false} />
 
-                                <CampoPreco type={'money'}
-                                    placeholder="Preço" 
-                                    placeholderTextColor="#D3e23a" 
-                                    value={preco} 
+                                <CampoPreco
+                                    type={'money'}
+                                    placeholder="Preço"
+                                    placeholderTextColor="#9094A6"
+                                    value={preco}
                                     includeRawValueInChangeText={true}
-                                    onChangeText={(text, masked)=>{
+                                    onChangeText={(text, masked) => {
                                         setPreco(text);
                                         setPrecoMasked(masked);
-                                    }} 
-                                    keyboardType="decimal-pad" 
-                                    returnKeyType="done" 
-                                    ref={(refInput) => { precoInput = refInput; }} />
+                                    }}
+                                    keyboardType="decimal-pad"
+                                    returnKeyType="done"
+                                    ref={precoInput} />
                             </CampoArea>
 
                             <Botao onPress={handleOperation}>
-                                <BotaoTexto>{ state.is_edit ? 'Alterar' : 'Adicionar' }</BotaoTexto>
+                                <BotaoTexto>{state.is_edit ? 'Alterar' : 'Adicionar'}</BotaoTexto>
                             </Botao>
                         </InfosArea>
                     </JanelaInner>
                     <CloseButton onPress={handleCloseModal}>
-                        <FontAwesome name="close" size={24} color="#D3e23a" />
+                        <FontAwesome name="close" size={24} color="#9094A6" />
                     </CloseButton>
                 </Janela>
             </Fundo>
         </Modal>
     );
 }
-

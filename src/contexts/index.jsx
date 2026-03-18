@@ -1,125 +1,129 @@
-import React, { createContext, useReducer } from 'react';
-import initialState, { Api } from '../data';
+import React, { createContext, useReducer, useEffect, useRef } from 'react';
+import { ListaAPI } from '../services/api';
 
 const AppContext = createContext({});
 
+const initialState = {
+    listaId: null,
+    total: 0,
+    orcamento: 0,
+    show_done: false,
+    show_modal: false,
+    is_edit: false,
+    edit_item: {},
+    produtos: [],
+    membros: [],
+    ownerEmail: null,
+};
+
 const actions = {
-    setDados(state, action){
-        Api.setDados(action.payload);
-        return action.payload
-    },
-    handleShowDone(state, action){
-        let newState = {...state, show_done: action.payload};
-        Api.setDados(newState);
+    setDadosCompletos(state, action) {
+        const lista = action.payload;
         return {
             ...state,
-            show_done: action.payload
-        }
+            listaId: lista._id,
+            produtos: lista.produtos || [],
+            total: lista.total || 0,
+            orcamento: lista.orcamento || 0,
+            membros: lista.membros || [],
+            ownerEmail: lista.owner?.email || null,
+        };
     },
-    handleIsEdit(state, action){
-        let newState = {...state, is_edit: action.payload};
-        Api.setDados(newState);
-        return {
-            ...state,
-            is_edit: action.payload
-        }
+    setMembros(state, action) {
+        return { ...state, membros: action.payload };
     },
-    setEditItem(state, action){
-        let newState = {...state, edit_item: action.payload};
-        Api.setDados(newState);
-        return {
-            ...state,
-            edit_item: action.payload
-        }
+    setOrcamento(state, action) {
+        return { ...state, orcamento: action.payload };
     },
-    handleModal(state, action){
-        let newState = {...state, show_modal: action.payload};
-        Api.setDados(newState);
-        return {
-            ...state,
-            show_modal: action.payload
-        }
+    handleShowDone(state, action) {
+        return { ...state, show_done: action.payload };
     },
-    handleAddNewProduto(state, action){
-        let newState = {...state, produtos: [action.payload, ...state.produtos]};
-        Api.setDados(newState);
-        return {
-            ...state,
-            produtos: [action.payload, ...state.produtos]
-        }
+    handleIsEdit(state, action) {
+        return { ...state, is_edit: action.payload };
     },
-    handleEditProduto(state, action){
-        let produto = action.payload;
-        state.produtos.forEach(item => {
-            if(item.id === produto.id){
-                item.nome = produto.nome;
-                item.quantidade = produto.quantidade;
-                item.preco = produto.preco
-            }
-        });
-        let newState = {...state, produtos: state.produtos};
-        Api.setDados(newState);
-        return {
-            ...state,
-            produtos: state.produtos
-        }
+    setEditItem(state, action) {
+        return { ...state, edit_item: action.payload };
     },
-    handleDeleteProduto(state, action){
-        item = action.payload;
-        let newState = {...state, produtos: state.produtos.filter(i => i.id !== item)};
-        Api.setDados(newState);
-        return {
-            ...state,
-            produtos: state.produtos.filter(i => i.id !== item)
-        }
+    handleModal(state, action) {
+        return { ...state, show_modal: action.payload };
     },
-    handleToggleDone(state, action){
-        let produto = action.payload;
-        state.produtos.forEach(item => {
-            if(item.id === produto.id){
-                item.done = produto.done;
-            }
-        });
-        let newState = {...state, produtos: state.produtos};
-        Api.setDados(newState);
-        return {
-            ...state,
-            produtos: state.produtos
-        }
+    handleAddNewProduto(state, action) {
+        return { ...state, produtos: [action.payload, ...state.produtos] };
     },
-    handleTotal(state, action){
-        let total = 0;
-        state.produtos.map((item)=>(
-            total = total + (parseInt(item.quantidade)*parseFloat(item.preco))
-        ));
+    handleEditProduto(state, action) {
+        const produto = action.payload;
+        const produtos = state.produtos.map(item =>
+            item.id === produto.id
+                ? { ...item, nome: produto.nome, quantidade: produto.quantidade, preco: produto.preco }
+                : item
+        );
+        return { ...state, produtos };
+    },
+    handleDeleteProduto(state, action) {
+        return { ...state, produtos: state.produtos.filter(i => i.id !== action.payload) };
+    },
+    handleToggleDone(state, action) {
+        const { id, done } = action.payload;
+        const produtos = state.produtos.map(item =>
+            item.id === id ? { ...item, done } : item
+        );
+        return { ...state, produtos };
+    },
+    handleTotal(state) {
+        const total = state.produtos
+            .filter(item => !item.done)
+            .reduce((acc, item) => acc + (parseInt(item.quantidade) * parseFloat(item.preco)), 0);
+        return { ...state, total: parseFloat(total).toFixed(2) };
+    },
+};
 
-        total = parseFloat(total).toFixed(2);
-        let newState = {...state, total: total};
-        Api.setDados(newState);
-        return {
-            ...state,
-            total: total
-        }
+export const AppProvider = ({ children }) => {
+    const [state, dispatch] = useReducer(
+        (state, action) => {
+            const fn = actions[action.type];
+            return fn ? fn(state, action) : state;
+        },
+        initialState
+    );
 
-    }
-}
+    const fromAPI = useRef(false);
+    const saveTimer = useRef(null);
 
-export const AppProvider = props => {
+    // Salva no backend (debounce 1.5s) quando produtos/total/orcamento mudam
+    useEffect(() => {
+        if (fromAPI.current) { fromAPI.current = false; return; }
+        if (!state.listaId) return;
 
-    function reducer(state, action){
-        const fn = actions[action.type];
-        return fn ? fn(state, action) : state;
-    }
+        if (saveTimer.current) clearTimeout(saveTimer.current);
+        saveTimer.current = setTimeout(() => {
+            ListaAPI.atualizar({
+                produtos: state.produtos,
+                total: state.total,
+                orcamento: state.orcamento,
+            }).catch(() => {}); // silencioso — dados já estão no estado local
+        }, 1500);
 
-    const [state, dispatch] = useReducer(reducer, initialState);
+        return () => { if (saveTimer.current) clearTimeout(saveTimer.current); };
+    }, [state.produtos, state.total, state.orcamento]);
+
+    // Sync colaborativo: refaz fetch a cada 30 segundos
+    useEffect(() => {
+        if (!state.listaId) return;
+        const interval = setInterval(async () => {
+            try {
+                const lista = await ListaAPI.getAtual();
+                fromAPI.current = true;
+                dispatch({ type: 'setDadosCompletos', payload: lista });
+            } catch {}
+        }, 30000);
+        return () => clearInterval(interval);
+    }, [state.listaId]);
 
     return (
-        <AppContext.Provider value={{
-            state, dispatch
-        }}>
-            { props.children }
+        <AppContext.Provider value={{ state, dispatch }}>
+            {children}
         </AppContext.Provider>
     );
-}
+};
 
 export default AppContext;

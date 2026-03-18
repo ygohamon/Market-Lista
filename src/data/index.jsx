@@ -14,12 +14,13 @@ export default {
 
 export const Api = {
     getDados: async () => {
-        pegaDados = await AsyncStorage.getItem('marketlista');
+        let pegaDados = await AsyncStorage.getItem('marketlista');
+        let dados;
         if(JSON.parse(pegaDados)){
             dados = JSON.parse(pegaDados);
         } else {
             await AsyncStorage.setItem('marketlista', JSON.stringify({
-                total: 0, 
+                total: 0,
                 show_done: false,
                 show_modal: false,
                 is_edit: false,
