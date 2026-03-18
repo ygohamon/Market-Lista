@@ -11,8 +11,13 @@
     "android": {
       "package": "com.marketlista",
       "versionCode": 1,
-      "permissions": []
+      "permissions": [],
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bf94129c-3685-423d-9dfa-872d1a5df14c"
+      }
     }
-   }
-  
+  }
 }

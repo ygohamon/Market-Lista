@@ -73,7 +73,7 @@ export default () => {
                 nomeInput.current?.focus();
             }}
         >
-            <Fundo behavior={Platform.OS === 'ios' ? 'padding' : 'height'}>
+            <Fundo behavior="padding">
                 <Janela>
                     <Titulo>{state.is_edit ? 'Alterar Produto' : 'Adicionar Produto'}</Titulo>
                     <JanelaInner>
