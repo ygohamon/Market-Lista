@@ -22,16 +22,16 @@ export default () => {
     const precoInput = useRef(null);
 
     const handleOperation = () => {
-        if (!nome || nome == '') {
+        if (!nome || nome === '') {
             Alert.alert('Atenção', 'Preencha o nome!');
             return;
         }
 
         let newItem = {
-            id: state.is_edit ? id : Math.random() * 100000,
+            id: state.is_edit ? id : `${Date.now()}-${Math.random().toString(36).slice(2)}`,
             quantidade: quantidade === 0 || quantidade === '' || quantidade === undefined ? '1' : quantidade,
             nome: nome,
-            preco: isNaN(precoMasked) || precoMasked == '' ? '0' : precoMasked,
+            preco: isNaN(precoMasked) || precoMasked === '' ? '0' : precoMasked,
             done: false
         }
 

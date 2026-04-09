@@ -12,18 +12,21 @@ export default () => {
 
     useEffect(() => {
         const load = async () => {
+            const inicio = Date.now();
             try {
                 const lista = await ListaAPI.getAtual();
                 dispatch({ type: 'setDadosCompletos', payload: lista });
-                // Recalcula total
                 dispatch({ type: 'handleTotal' });
             } catch {
                 // Sem conexão ou token expirado — continua com lista vazia
             }
 
+            // Garante animação mínima de 1s independente da velocidade da API
+            const decorrido = Date.now() - inicio;
+            const restante = Math.max(0, 1000 - decorrido);
             setTimeout(() => {
                 navigation.reset({ routes: [{ name: 'MainTabs' }] });
-            }, 1000);
+            }, restante);
         };
 
         load();

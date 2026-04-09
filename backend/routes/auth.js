@@ -40,10 +40,10 @@ router.post('/login', async (req, res) => {
       return res.status(400).json({ erro: 'Preencha email e senha' });
 
     const user = await User.findOne({ email });
-    if (!user) return res.status(400).json({ erro: 'Usuário não encontrado' });
+    if (!user) return res.status(400).json({ erro: 'Email ou senha incorretos' });
 
     const ok = await user.compararSenha(senha);
-    if (!ok) return res.status(400).json({ erro: 'Senha incorreta' });
+    if (!ok) return res.status(400).json({ erro: 'Email ou senha incorretos' });
 
     const token = gerarToken(user._id);
 

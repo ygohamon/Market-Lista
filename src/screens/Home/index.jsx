@@ -40,9 +40,9 @@ export default () => {
                 <ScrollView>
                     {itensFiltrados.length > 0 ? (
                         <>
-                            {itensFiltrados.map((item, key) => (
+                            {itensFiltrados.map((item) => (
                                 <ListItem
-                                    key={key}
+                                    key={item.id}
                                     item={item}
                                     onPress={() => handleToggleDone(item)}
                                     handleLeft={() => handleDelete(item)}
